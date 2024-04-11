@@ -273,14 +273,23 @@ footer {
 }
 
 .product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #ECF3F8;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.product label{
+.nameform {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.zakaz {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+
 }
 
 body {
