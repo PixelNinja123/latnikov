@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img class="logo animate__animated animate__jello" src="img/logo.png" alt="logo">
+            <div class="wrapper">
+                <div class="offer">
+                    <h1 class="title">С помощью нас<br> вы сможете создать то, о чем</h1>
+                    <span class="title_span">желаете!</span>
+                    <p class="offer_text">Наши возможности + опыт позволяет Вам достичь огромного успеха. Мы верим в вас! И знаем это на все 100%. Вас не остановить!</p>
+                    <a href="#" class="btn animate-fading">Узнать больше...</a>
+                </div>
+                <img  class="header_img animate__animated animate__swing" src="img/header-img.png" alt="pic">
+            </div>
+        </div>
+    </header>
+
+    <section class="main tranz">
+        <div class="container">
+            <h2 class="main_title">Что Вам необходимо?</h2>
+            <div class="main_block">
+                <div class="blocks">
+                    <img src="img/f3.png" alt="pic">
+                    <h3>Первый блок</h3>
+                    <p class="predl">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="blocks">
+                    <img src="img/f4.png" alt="pic">
+                    <h3>Второй блок</h3>
+                    <p class="predl">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="blocks">
+                    <img src="img/f5.png" alt="pic">
+                    <h3>Третий блок</h3>
+                    <p class="predl">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="product">
+        <div class="forma_product">
+            <h2 class="nameform">Форма заказа продукта или услуги</h2>
+            <form class="zakaz" action="#" method="POST" enctype="multipart/form-data" onsubmit="return validateProductForm()">
+                <div>
+                    <label for="first_name">Имя:</label>
+                    <input type="text" name="first_name" id="first_name" value="" >
+                    <span id="first_name_error" class="error"></span>
+                </div>
+                <div>
+                    <label for="last_name">Фамилия:</label>
+                    <input type="text" name="last_name" id="last_name" value="" >
+                    <span id="last_name_error" class="error"></span>
+                </div>
+                <div>
+                    <label for="phone_number">Номер телефона:</label>
+                    <input type="tel" name="phone_number" id="phone_number" placeholder="xxx-xxx-xxx" >
+                    <span id="phone_number_error" class="error"></span>
+                </div>
+                <div>
+                    <label for="destination">Место нахождения:</label>
+                    <input type="text" name="destination" id="destination" >
+                    <span id="destination_error" class="error"></span>
+                </div>
+                <div>
+                    <label for="date_time">Дата и время доставки:</label>
+                    <input type="datetime-local" name="date_time" id="date_time" >
+                    <span id="date_time_error" class="error"></span>
+                </div>
+                <div>
+                    <label for="quantity">Количество товара:</label>
+                    <input type="number" name="quantity" id="quantity" >
+                    <span id="quantity_error" class="error"></span>
+                </div>
+                <button type="submit" class="otpravka animate-gradient" id="send_button">Отправить заказ</button>
+            </form>            
+        </div>
+    </section>
+
+    <section class="survey">
+        <div class="container">
+            <h2 class="survey_block">Форма заказа обратного звонка</h2>
+            <form class="order" action="#" method="POST" enctype="multipart/form-data" onsubmit="return confirm('Вы уверены, что хотите отправить этот запрос?')">
+                <input type="text" name="username" id="username" value="" placeholder="Имя" required>
+                <input type="email" name="mail" id="mail" value="" placeholder="Введите свой E-mail" required>
+                <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
+                <input type="text" name="interest" id="interest" value="" placeholder="Какая тема Вас интересует?" required minlength="3" maxlength="50">
+                <button type="submit" class="otpravka animate-gradient">Отправить вопрос!</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer>
+        © Все на этом сайте защищено
+    </footer>
+
+    <script src="js/code.js"></script>
+    
+
+</body>
+</html>
