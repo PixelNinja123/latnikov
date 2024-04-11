@@ -540,12 +540,18 @@ footer {
     transform: scale(1.5);
 }
 
+.error{
+    color: red;
+}
+
 
 /* Extra large devices (large desktops, 1200px and up)*/
 
 @media screen and (max-width: 1200px)
 
 {
+    
+
     .container{
         width: 960px;
     }
@@ -613,4 +619,5 @@ footer {
     .offer_text{
         width: 90%;
     }
+
 }
